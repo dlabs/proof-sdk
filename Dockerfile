@@ -9,6 +9,7 @@ COPY . .
 
 RUN npm install
 RUN npm run build
+RUN cp -r dist/* public/
 
 ENV PORT=4000
 ENV NODE_ENV=production
